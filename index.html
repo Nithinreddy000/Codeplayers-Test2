@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        .slider-container {
+             overflow: hidden;
+             border: 2px solid #9e3ffd;
+             border-radius: 10px;
+             background-color: #fff;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             position: relative;
+         }
+ 
+         .slider-track {
+             display: flex;
+             transition: transform 0.3s ease;
+         }
+ 
+         .slider-item {
+             flex: 0 0 auto;
+             width: 100%;
+             padding: 20px;
+             text-align: center;
+             font-size: 1.5rem;
+             user-select: none;
+             white-space: nowrap;
+             color: white;
+         }
+     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <section class="main">
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="https://video.wixstatic.com/video/11062b_61558372520445139c0be500ba546c4d/1080p/mp4/file.mp4" type="video/mp4">
+            </video>
+        </div>
+        <header  id="header-top" class="content header-top fade-in-up">
+            <div class="HHHH">
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 link-secondary justify-content-center">Products</a></li>
+                  <li><a href="#" class="nav-link px-2 justify-content-center">Integrations</a></li>
+                  <li><a href="#" class="nav-link px-2 justify-content-center">Pricing</a></li>
+                  <li><a href="#" class="nav-link px-2 justify-content-center">About us</a></li>
+                </ul>
+                <div class="logo">
+                    <img class="fold-in" src="./logo.png" alt="Codeplayers"> <!-- Replace path_to_your_logo_image with the actual path to your logo image -->
+                </div>
+            </div>
+            <div class="col-md-3 text-end buttons">
+                <button type="button" class="btn btn-outline-primary me-5"><img src="./download_static.png" data-hover="./download.gif" height="30" style="padding-right: 2px;">Downloads</button>
+                <button type="button" class="btn btn-primary"><img src="./login_static.png" data-hover="./login.gif" height="30" style="padding-right: 2px;">Sign-in</button>
+            </div>
+        </header>
+        <div class="infinityerp">
+            <img class="fold-in" style="padding-bottom: 40px;" src="./infinityERP.png" alt="infinityERP">
+            <p class="float-in" style="color:rgb(22,22,63); font-weight: bold; font-size: 37px; font-family: bai jamjuree, sans-serif;">Choose a Powerful ERP<br>for Your Enterprise</p>
+            <div class="buttons float-in" style="padding-top: 20px;">
+                <button style="font-size: larger; padding-left: 15px; padding-right: 15px; border-radius: 20px;" type="button" class="btn btn-outline-primary me-5">Discover</button>
+            </div>
+        </div>
+    </section>
+    <section class="features" style="background-color: #9e3ffd !important;">
+        <div style="grid-column: span 4; padding-left: 20px; margin-bottom: 0%; padding-top: 50px;"><h3>Discover the Features</h3></div>
+        <div class="feature" style="padding-top: 80px;">
+            <div class="feature-content">
+                <div class="feature-icon" style="border-radius: 50%; background-color: white; width: 100px; height: 100px;">
+                    <img height="80" src="./simple.gif" alt="gif to represent simplicity">
+                </div>
+                <p style="font-size: larger; font-weight: bold; color: #fff; ">Simple</p>
+                <p style="font-size: large; color:white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Extensively Simplified User Interface which allows inexperienced people to run ERP conveniently.</p>
+            </div>
+        </div>
+        <div class="feature" style="padding-top: 80px">
+            <div class="feature-content">
+                <div class="feature-icon" style="border-radius: 50%; background-color: white; width: 100px; height: 100px;">
+                    <img height="80" src="./intelligent.gif" alt="gif to represent simplicity">
+                </div>
+                <p style="font-size: larger; font-weight: bold; color: #fff; ">Intelligent</p>
+                <p style="font-size: large; color: white;">It analyses the usage of User so as to readjust itself to provide the best User Experience.</p>
+            </div>
+        </div>
+        <div class="feature" style="padding-top: 80px">
+            <div class="feature-content">
+                <div class="feature-icon" style="border-radius: 50%; background-color: white; width: 100px; height: 100px;">
+                    <img height="80" src="./secure.gif" alt="gif to represent simplicity">
+                </div>
+                <p style="font-size: larger; font-weight: bold; color: #fff; ">Secure</p>
+                <p style="font-size: large; color: white;">Here at CODEPLAYERS security comes first! ERP secure your data for as long as a decade or even more.</p>
+            </div>
+        </div>
+        <div class="feature" style="padding-top: 80px;">
+            <div class="feature-content">
+                <div class="feature-icon" style="border-radius: 50%; background-color: white; width: 100px; height: 100px;">
+                    <img height="80" src="./reliable.gif" alt="gif to represent simplicity">
+                </div>
+                <p style="font-size: larger; font-weight: bold; color: #fff; ">Reliable</p>
+                <p style="font-size: large; color: white;">The accuracy of ERP is incomparable. Our product comes up with NIL data corruption possibility.</p>
+            </div>
+        </div>
+        <div class="feature" style="padding-top: 170px;">
+            <div class="feature-content">
+                <div class="feature-icon" style="border-radius: 50%; background-color: white; width: 100px; height: 100px;">
+                    <img height="80" src="./potential.gif" alt="gif to represent simplicity">
+                </div>
+                <p style="font-size: larger; font-weight: bold; color: #fff; ">Utilize Hardware<br>Potential</p>
+                <p style="font-size: large; color: white;">Our software operates by exploiting the hightest potential of the hardware making the most of it.</p>
+            </div>
+        </div>
+        <div class="feature" style="padding-top: 170px;">
+            <div class="feature-content">
+                <div class="feature-icon" style="border-radius: 50%; background-color: white; width: 100px; height: 100px;">
+                    <img height="80" src="./dynamic.gif" alt="gif to represent simplicity">
+                </div>
+                <p style="font-size: larger; font-weight: bold; color: #fff; ">Dynamic Application<br>Mechanism</p>
+                <p style="font-size: large; color: white;">The proposed mechanism achieves easy compatibility and acquisition feasibility under fluctuating needs.</p>
+            </div>
+        </div>
+        <div class="feature" style="padding-top: 170px;">
+            <div class="feature-content">
+                <div class="feature-icon" style="border-radius: 50%; background-color: white; width: 100px; height: 100px;">
+                    <img height="80" src="./report.gif" alt="gif to represent simplicity">
+                </div>
+                <p style="font-size: larger; font-weight: bold; color: #fff; ">User Level<br>Reports</p>
+                <p style="font-size: large; color: white;">Our ERP assists to view user session reports based on role based access control and track user activities.</p>
+            </div>
+        </div>
+        <div class="feature" style="padding-top: 170px;">
+            <div class="feature-content">
+                <div class="feature-icon" style="border-radius: 50%; background-color: white; width: 100px; height: 100px;">
+                    <img height="80" src="./scalable.gif" alt="gif to represent simplicity">
+                </div>
+                <p style="font-size: larger; font-weight: bold; color: #fff; ">Scalable<br>Upto the Mark</p>
+                <p style="font-size: large; color: white;">We endeavor to serve companies of all sizes to reap the benefits of ERP software.</p>
+            </div>
+        </div>
+    </section>
+    <section class="company-history">
+        <div style="padding-left: 100px; padding-top: 50px;">
+            <!-- Draggable Text Slider -->
+            <div class="slider-container" id="sliderContainer" style="height: 620px; background-color: #9e3ffd; width: 550px;">
+                <div class="slider-track">
+                    <div class="slider-item" style="font-size:x-large; font-weight: lighter; text-align:center; font-family: source-serif-pro, serif;color: white;">
+                        <h4 style="font-size: xx-large; padding-bottom: 20px; color: black;"> Nothing More Simplified...</h4>
+                        “Implementation of Infinity Erp. Hotel Software has<br> improved various operational aspects in our hotel<br> and has enhanced the management reporting<br> system too. ''We are much satisfied with <br>Codeplayer’s user-friendly software and their instant<br> services.”Most importantly, its 24/7 physical and<br> online support makes Codeplayer’s special.”
+                        <p style="padding-left:330px ; padding-top: 150px; color: black;"><br>Manoj Agrawal<br>Owner Hotel Patik<br><p>
+                    </div>
+                    <div class="slider-item" style="font-size:x-large; font-weight: lighter; text-align:center; font-family: source-serif-pro, serif;color: white;">
+                        <h4 style="font-size: xx-large; padding-bottom: 20px; color: black;"> Thankyou Codeplayers</h4>
+                        Infinity Erp. provides better control of what’s<br> happening at our QSR.  I like the Anti-theft dashboard<br> the most, it is easy to use. It has allowed us to swiftly<br> open the dashboard and access the total sales made<br> from anywhere. We can now classify the risks and<br> monitor any suspicious bill alterations conveniently.<br> My experience with Codeplayers has been really great. 
+                        <p style="padding-left:330px; padding-top: 150px; color: black;"><br>Manoj Bansal<br>Galaxy The Mall<br><p></p>
+                    </div>
+                    <div class="slider-item" style="font-size:x-large; font-weight: lighter; text-align:center; font-family: source-serif-pro, serif;color: white;">
+                        <h4 style="font-size: xx-large; padding-bottom: 20px; color: black;"> They are the best</h4>
+                        Codeplayers has been providing SchoolPro in our <br>school since 2016. We found it very helpful in finding<br> solutions to all major and minor problems such as<br> attendance, admission, fee or transport. All the <br>modules have unique and specific features which <br>ultimately save time and help us to be more advanced<br> through technology. I wish all the very best to<br> Codeplayers team and hope that you will be the<br> ‘One stop solution’ for digital education in future.
+                        <p style="padding-left:330px; color: black;padding-top: 80px;"><br>Shakthi Agrawal<br>Director DPS<br><p></p>
+                    </div>
+                    <div class="slider-item" style="font-size:x-large; font-weight: lighter; text-align:center; font-family: source-serif-pro, serif;color: white;">
+                        <h4 style="font-size: xx-large; padding-bottom: 20px; color: black;"> Infinity ERP and nothing else!</h4>
+                        Infinity Erp. is like a data matrix for us. It has made it<br> easier for us to gather all the information in one place.<br> The insights that the software provides us has helped<br> us in targeting the correct audience by expanding our<br> marketing strategy. Codeplayer’s restaurant<br> management system has also assisted us in managing<br> our inventory more efficiently and control the overall<br> restaurant management cost.  I have always<br> recommended Codeplayer’s for their proactive<br> services.                        
+                        <p style="padding-left:270px; padding-top: 50px; color: black;"><br>Shikhar Agrawal<br>Owner RK Entertainments<br><p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="company-details">
+            <img src="./codep.gif" height="100" style="padding-left: 300px; padding-top: 30px;"/>
+            <h1 style="text-align: center; font-size:larger; padding-right: 60px;padding-bottom: 20px;">Discover Codeplayers</h1>
+            <h1 style="text-align: center; font-size:xx-large; padding-right: 50px; font-family: source-serif-pro, serif; padding-bottom: 20px;">We dont hide, we stand tall in front<br> of Challenges</h1>
+            <p style="font-family: Roboto, sans-serif; font-size: 20px; color: #7c8d93;" >We are 23 years experienced people providing technology solutions. We know ‘Technology’, we know ‘Computers’. We have expertise to integrate and automate<br> the business processes. </p>
+            <p style="font-family: Roboto, sans-serif; font-size: 20px; color: #7c8d93;">Our featured product is called <b>INFINITY ERP</b> The word ‘infinity’ suggests endless<br> and therefore the Applicants expected to create endless opportunities and<br> possibilities through creation of a software and related services. The name<br> Infinity ERP was adopted because it aimed at creating a software which shall be cutting edge in the IT field. This software shall have multiple verticals / functions<br> in the same interface which shall allow businesses to drastically improve their<br> efficiencies over the long term. Every business owner shall have its own admin<br> access within the software which creates a personalized and customized<br> portfolio of services peculiar to the needs of that particular business.</p>
+        </div>
+    </section>
+    <section class="footer">
+        <footer class="py-5" style="padding-bottom:0%; margin-bottom:0%; border-bottom: 5px solid #a0138e;">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+                <h5 style="padding-bottom: 20px; font-size:x-large;">Company</h5>
+                <ul class="nav flex-column" style="padding-bottom: 10px;">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Integrations</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                </ul>
+                <img src="./instagram.png" height="30" style="padding-right: 10px;">
+                <img src="./x.png" height="30" style="padding-right: 10px;">
+                <img src="./youtube.png" height="35" style="padding-right: 10px;">
+              </div>
+              <div class="col-6 col-md-2 mb-3">
+              </div>
+              <div class="col-md-5 offset-md-1 mb-3" style="padding-right: 200px;">
+                <h3 style="padding-bottom: 20px; font-family: source-serif-pro, serif;">
+                    We create taste from finest experiences
+                </h3>
+                <p>As a Solution Provider, we eat sleep and dream digital solutions! Similarly, our interaction with brands happen via email, live chat, text, app or social engagements.</p>
+                <p>We are incurably curious, and side by side, we are driven by data. This nature of us helps us in creating the finest wines for our brands, enjoyed by the customers.</p>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top mb-0" style="padding-bottom: 0 !important; margin-bottom: 0 !important;">
+                <img src="./logo.png" height="22" style="padding-left: 200px; padding-top: 3px;">
+                <p class="mb-0" style="padding-right: 100px; padding-left: 20px;">© 2018-2024 Codeplayers Bussiness System Pvt.Ltd.<p>Privacy&nbsp;&nbsp;&nbsp;Terms of use&nbsp;&nbsp;&nbsp;Feedback&nbsp;&nbsp;&nbsp;Cookies&nbsp;&nbsp;&nbsp;Legal Disclosure&nbsp;&nbsp;&nbsp;EULA</p>
+            </p>
+                <ul class="list-unstyled d-flex mb-0">
+                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                  <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+              </div>                          
+          </footer>
+    </section>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('header-top');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        document.querySelectorAll('.buttons button').forEach(button => {
+        const img = button.querySelector('img');
+        const staticSrc = img.src;
+        const hoverSrc = img.getAttribute('data-hover');
+
+        button.addEventListener('mouseenter', () => {
+            img.src = hoverSrc;
+        });
+
+        button.addEventListener('mouseleave', () => {
+            img.src = staticSrc;
+        });
+    });
+    </script>
+    <script>
+    
+
+    const sliderTrack = document.querySelector('.slider-track');
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let currentIndex = 0;
+let slides = document.querySelectorAll('.slider-item');
+let autoSlideInterval;
+
+sliderTrack.addEventListener('mousedown', startDrag);
+sliderTrack.addEventListener('mouseup', endDrag);
+sliderTrack.addEventListener('mouseleave', endDrag);
+sliderTrack.addEventListener('mousemove', drag);
+
+sliderTrack.addEventListener('touchstart', startDrag);
+sliderTrack.addEventListener('touchend', endDrag);
+sliderTrack.addEventListener('touchmove', drag);
+
+startAutoSlide(); // Start auto-slide when the page loads
+
+function startDrag(event) {
+    isDragging = true;
+    startPos = getPositionX(event);
+    prevTranslate = currentTranslate;
+    sliderTrack.style.cursor = 'grabbing';
+    cancelAutoSlide();
+    requestAnimationFrame(animation);
+}
+
+function endDrag() {
+    isDragging = false;
+    const movedBy = currentTranslate - prevTranslate;
+    if (movedBy < -100 && currentIndex < slides.length - 1) {
+        currentIndex += 1;
+    } else if (movedBy > 100 && currentIndex > 0) {
+        currentIndex -= 1;
+    }
+    setPositionByIndex();
+    sliderTrack.style.cursor = 'grab';
+    startAutoSlide(); // Restart auto-slide after manual interaction
+}
+
+function drag(event) {
+    if (isDragging) {
+        const currentPosition = getPositionX(event);
+        currentTranslate = prevTranslate + currentPosition - startPos;
+        setSliderPosition();
+    }
+}
+
+function setPositionByIndex() {
+    currentTranslate = currentIndex * -sliderTrack.clientWidth;
+    prevTranslate = currentTranslate;
+    setSliderPosition();
+}
+
+function setSliderPosition() {
+    sliderTrack.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+function getPositionX(event) {
+    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+}
+
+function animation() {
+    if (isDragging) requestAnimationFrame(animation);
+    setSliderPosition();
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            setPositionByIndex();
+            setSliderPosition();
+        } else {
+            currentIndex = 0;
+            setPositionByIndex();
+            setSliderPosition();
+        }
+    }, 5000); // Auto-slide every 5 seconds
+}
+
+function cancelAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+window.addEventListener('focus', startAutoSlide); // Restart auto-slide when the tab regains focus
+window.addEventListener('blur', cancelAutoSlide); // Pause auto-slide when the tab loses focus
+
+
+    
+        </script>
+</body>
+</html>
